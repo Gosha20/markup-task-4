@@ -1,0 +1,107 @@
+.card
+{
+    width: 300px;
+    border: 1.5px solid rgba(150, 145, 145, .3);
+    display: inline-block;
+    margin: 15px 15px 0 0;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 10px;
+    color: #1b1a1a;
+}
+
+.full-info-switch
+{
+    display: none;
+}
+
+.full-info-switch-pic
+{
+    width: 30px;
+    height: 30px;
+    display: block; 
+    cursor: pointer;
+}
+
+.full-info-switch:not(:checked) ~ .full-info-switch-pic
+{
+    background: url(pic.jpg) center / contain;
+}
+
+.full-info-switch:checked ~ .full-info-switch-pic
+{
+    background: url(1.jpg) center / contain;
+}
+
+
+.full-info-switch:checked ~ .card
+{
+    width: 350px;
+    display: block;
+}
+
+.full-info-switch:not(:checked) ~ .card
+{
+    display: inline-block;
+}
+
+
+.full-info-switch:checked ~ .card > .short-info,
+.full-info-switch:not(:checked) ~ .card > .full-info
+{
+    display: none;
+}
+
+
+img
+{
+    width: 100%;
+    display: block;
+}
+
+img:hover
+{
+    box-shadow: 0 0 10px;
+    color: #1b1a1a;
+}
+
+.short-info > ul
+{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.name-link
+{
+    text-decoration: none;
+    color: #1b1a1a;
+}
+.short-info > ul > li:hover
+{
+    font-size: 104%;
+}
+.short-info
+{   
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 0 16px;
+}
+
+.full-info
+{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 20px 16px;    
+}
+.cat-name
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 0 15px;
+}
