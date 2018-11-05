@@ -21,20 +21,19 @@
 {
     width: 30px;
     height: 30px;
-    display: block; 
+    display: block;
     cursor: pointer;
 }
 
 .full-info-switch:not(:checked) ~ .full-info-switch-pic
 {
-    background: url(pic.jpg) center / contain;
+    background: url(images/pic.jpg) center / contain;
 }
 
 .full-info-switch:checked ~ .full-info-switch-pic
 {
-    background: url(1.jpg) center / contain;
+    background: url(images/pic2.jpg) center / contain;
 }
-
 
 .full-info-switch:checked ~ .card
 {
@@ -47,13 +46,11 @@
     display: inline-block;
 }
 
-
 .full-info-switch:checked ~ .card > .short-info,
 .full-info-switch:not(:checked) ~ .card > .full-info
 {
     display: none;
 }
-
 
 img
 {
@@ -79,12 +76,14 @@ img:hover
     text-decoration: none;
     color: #1b1a1a;
 }
+
 .short-info > ul > li:hover
 {
     font-size: 104%;
 }
+
 .short-info
-{   
+{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px 0 0 16px;
@@ -94,14 +93,15 @@ img:hover
 {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 0 20px 16px;    
+    margin: 10px 0 20px 16px;
 }
+
 .cat-name
 {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 32px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px 0 0 15px;
 }
